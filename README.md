@@ -69,6 +69,27 @@ If you want to download the latest version of **Ionicons** font from the officia
     $ sudo chmod +x *.sh
     $ sudo chmod +x /bin/dzen_start
 
+#### 4. Edit .conkyrcdzen1 file
+
+**Gmail Account**
+
+Find  the line `Upload and parse gmail info`
+
+        ${execi 60 curl -u username:password --silent "https://mail.google.com/mail/feed/atom" -o ~/.cache/gmail.xml && xmllint --format ~/.cache/gmail.xml > ~/.cache/gmailParsed.xml}
+
+Change `username:password` respectively. 
+
+**Weather Forecast**
+
+1. Find the line `Upload and parse weather info`
+
+        ${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/50.4793,24.2816?units=si&exclude=hourly,flags" > ~/.cache/Forecast.json}
+
+You need to replcase `API_KEY` with your API key:
+
+* Go to https://developer.forecast.io/ and create your account. (**Note**: First 1000 calls per day are free)
+* Log in and copy your API key
+
 #### 4. Starting dzen2
 
 **Manually start**
