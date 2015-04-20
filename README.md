@@ -39,15 +39,20 @@
 
 #### 7. Fonts
 
+You can find them in **Fonts** directory:
+
 * Inconsolata
 * Ubuntu
 * Meslo LG S DZ
-
-Icon-fonts: (located in Dropbox "conky-fonts" folder)
 * FontAwesome (http://fortawesome.github.io/Font-Awesome/)
-* Ionicons (http://ionicons.com/  (patched version with pacman and arch logos in Dropbox))
+* Ionicons (http://ionicons.com/)
 * Typicons (http://www.typicons.com/)
 * Weather Icons (https://github.com/erikflowers/weather-icons)
+
+**Note!**
+
+If you want to download the latest version of **Ionicons** font from the official website there will be no Pacman and Arch icons. The **Fonts** directory contains the patched version of this font with mentioned icons.
+
 
 ### INSTALLATION
 ---
@@ -56,7 +61,7 @@ Icon-fonts: (located in Dropbox "conky-fonts" folder)
 
     $ sudo pacman -S dzen2
 
-#### 2. Place you Dzen2 folder into your `/home/username` directory
+#### 2. Place your Dzen2 folder into your `/home/username` directory
 #### 3. Make all `.sh` files executable
 
     $ cd ~/Dzen2/dzen-configs/strangeWORLD
