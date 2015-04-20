@@ -56,24 +56,25 @@ Icon-fonts: (located in Dropbox "conky-fonts" folder)
 
     $ sudo pacman -S dzen2
 
-2. Place you Dzen2 folder into your `/home/username` directory
-3. Make all `.sh` files executable
+#### 2. Place you Dzen2 folder into your `/home/username` directory
+#### 3. Make all `.sh` files executable
 
     $ cd ~/Dzen2/dzen-configs/strangeWORLD
     $ sudo cp dzen_start /bin/
     $ sudo chmod +x *.sh
     $ sudo chmod +x /bin/dzen_start
 
-4. Starting dzen2
+#### 4. Starting dzen2
 
-** Manually start **
+**Manually start**
 
     $ dzen_start
 
-** Manually stop **
+**Manually stop**
 
     $ killall dzen2
 
-** Automatically on boot (FOR XFCE USERS) **
+**Automatically on boot (FOR XFCE USERS)**
+
 Settings Manager -> Session and Startup -> Application Autostart
 Add: `/bin/dzen_start`
