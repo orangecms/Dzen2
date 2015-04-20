@@ -1,8 +1,8 @@
 # Dzen2 config files ( FOR ARCH USERS)
 
-[PREREQUISITES]()
+[PREREQUISITES](https://github.com/Ksiencha/Dzen2/blob/master/README.md#prerequisites)
 
-[INSTALLATION]()
+[INSTALLATION](https://github.com/Ksiencha/Dzen2/blob/master/README.md#installation)
 
 ### PREREQUISITES
 ---
@@ -47,7 +47,7 @@ Icon-fonts: (located in Dropbox "conky-fonts" folder)
 * Typicons (http://www.typicons.com/)
 * Weather Icons (https://github.com/erikflowers/weather-icons)
 
-=========== INSTALLATION
+### INSTALLATION
 
 1. Install dzen2
 
