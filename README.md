@@ -1,4 +1,4 @@
-# Dzen2 config files ( FOR ARCH USERS)
+## Dzen2 config files ( FOR ARCH USERS)
 
 [PREREQUISITES](https://github.com/Ksiencha/Dzen2/blob/master/README.md#prerequisites)
 
