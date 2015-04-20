@@ -37,7 +37,11 @@
 
     $ sudo pacman -S jshon
 
-#### 7. Fonts
+#### 7. Install dropbox-cli
+
+    $  yaourt -S dropbox-cli
+
+#### 8. Fonts
 
 You can find them in **Fonts** directory:
 
