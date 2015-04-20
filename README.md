@@ -1,4 +1,4 @@
-## Dzen2 config files ( FOR ARCH USERS)
+## Dzen2 config files (ARCH/XFCE)
 
 **strangeWORLD**
 ![screenshot](https://github.com/Ksiencha/Dzen2/blob/master/Screenshot.png)
@@ -6,38 +6,38 @@
 * [PREREQUISITES](https://github.com/Ksiencha/Dzen2/blob/master/README.md#prerequisites)
 * [INSTALLATION](https://github.com/Ksiencha/Dzen2/blob/master/README.md#installation)
 
-### PREREQUISITES
+## PREREQUISITES
 ---
-### CPU Temperature
+# 1. CPU Temperature
 
--> sudo pacman -S i2c-tools
--> sudo sensors-detect
-Answer 'y' on every question
--> sensors
--------------------------------
-### Battery state
+    $ sudo pacman -S i2c-tools
+    $ sudo sensors-detect       # Answer 'y' on every question
+    $ sensors
 
--> sudo pacman -S acpi
--> acpi -V
--------------------------------
-### Downloading with wget command
+# 2. Battery state
 
--> sudo pacman -S wget
--------------------------------
-### Checking current keayboard layout in use
+    $ sudo pacman -S acpi
+    $ acpi -V
 
--> yaourt -S xkblayout-state
--------------------------------
-### Install calculator
+# 3. Downloading with wget command
 
--> sudo pacman -S bc
--------------------------------
-### Install JSON-parsers 
-4.1. Install jq parser (read the Install file in folder JSON-parser)
-4.2. Insall jshon parser
--> sudo pacman -S jshon
--------------------------------
-### Fonts
+    $ sudo pacman -S wget
+
+# 4. Checking current keayboard layout in use
+
+    $ yaourt -S xkblayout-state
+
+# 5. Install calculator
+
+    $ sudo pacman -S bc
+
+# 6. Install JSON-parsers 
+6.1. Install jq parser (read the Install file in folder JSON-parser)
+6.2. Insall jshon parser
+
+    $ sudo pacman -S jshon
+
+# 7. Fonts
 
 * Inconsolata
 * Ubuntu
@@ -49,27 +49,31 @@ Icon-fonts: (located in Dropbox "conky-fonts" folder)
 * Typicons (http://www.typicons.com/)
 * Weather Icons (https://github.com/erikflowers/weather-icons)
 
-### INSTALLATION
+## INSTALLATION
+---
 
 1. Install dzen2
 
--> sudo pacman -S dzen2
+    $ sudo pacman -S dzen2
 
-2. Place you Dzen2 folder into your /home/username directory
-3. Make all .sh files executable
+2. Place you Dzen2 folder into your `/home/username` directory
+3. Make all `.sh` files executable
 
--> cd ~/Dzen2/dzen-configs/strangeWORLD
--> sudo cp dzen_start /bin/
--> sudo chmod +x *.sh
--> sudo chmod +x /bin/dzen_start
+    $ cd ~/Dzen2/dzen-configs/strangeWORLD
+    $ sudo cp dzen_start /bin/
+    $ sudo chmod +x *.sh
+    $ sudo chmod +x /bin/dzen_start
 
-4. Autostart
-Manually start
--> dzen_start
-Manually stop
--> killall dzen2
+4. Starting dzen2
 
-Automatically on boot (FOR XFCE USERS)
+** Manually start **
+
+    $ dzen_start
+
+** Manually stop **
+
+    $ killall dzen2
+
+** Automatically on boot (FOR XFCE USERS) **
 Settings Manager -> Session and Startup -> Application Autostart
-Add:
--> /bin/dzen_start
+Add: `/bin/dzen_start`
