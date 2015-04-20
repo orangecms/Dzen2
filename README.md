@@ -47,9 +47,8 @@ You can find them in **Fonts** directory:
 * Weather Icons (https://github.com/erikflowers/weather-icons)
 
 **Note!**
----
+
 If you want to download the latest version of **Ionicons** font from the official website there will be no Pacman and Arch icons. The **Fonts** directory contains the patched version of this font with mentioned icons.
----
 
 
 ### INSTALLATION
