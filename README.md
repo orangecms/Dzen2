@@ -6,38 +6,38 @@
 * [PREREQUISITES](https://github.com/Ksiencha/Dzen2/blob/master/README.md#prerequisites)
 * [INSTALLATION](https://github.com/Ksiencha/Dzen2/blob/master/README.md#installation)
 
-## PREREQUISITES
+### PREREQUISITES
 ---
-# 1. CPU Temperature
+#### 1. CPU Temperature
 
     $ sudo pacman -S i2c-tools
     $ sudo sensors-detect       # Answer 'y' on every question
     $ sensors
 
-# 2. Battery state
+#### 2. Battery state
 
     $ sudo pacman -S acpi
     $ acpi -V
 
-# 3. Downloading with wget command
+#### 3. Downloading with wget command
 
     $ sudo pacman -S wget
 
-# 4. Checking current keayboard layout in use
+#### 4. Checking current keayboard layout in use
 
     $ yaourt -S xkblayout-state
 
-# 5. Install calculator
+#### 5. Install calculator
 
     $ sudo pacman -S bc
 
-# 6. Install JSON-parsers 
+#### 6. Install JSON-parsers 
 6.1. Install jq parser (read the Install file in folder JSON-parser)
 6.2. Insall jshon parser
 
     $ sudo pacman -S jshon
 
-# 7. Fonts
+#### 7. Fonts
 
 * Inconsolata
 * Ubuntu
@@ -49,10 +49,10 @@ Icon-fonts: (located in Dropbox "conky-fonts" folder)
 * Typicons (http://www.typicons.com/)
 * Weather Icons (https://github.com/erikflowers/weather-icons)
 
-## INSTALLATION
+### INSTALLATION
 ---
 
-1. Install dzen2
+#### 1. Install dzen2
 
     $ sudo pacman -S dzen2
 
