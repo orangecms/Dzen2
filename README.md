@@ -80,12 +80,12 @@ Change `username:password` respectively.
 
 1. Find the line `Upload and parse weather info`
 
-        ${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/50.4793,24.2816?units=si&exclude=hourly,flags" > ~/.cache/Forecast.json}
+        ${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/LATITUDE,LONGITUDE?units=si&exclude=hourly,flags" > ~/.cache/Forecast.json}
 
-You need to replcase `API_KEY` with your API key:
+You need to replcase `API_KEY` and `LATITUDE,LONGITUDE` fields:
 
 * Go to https://developer.forecast.io/ and create your account. (**Note**: First 1000 calls per day are free)
-* Log in and copy your API key
+* Log in and copy your API key.
 
 #### 4. Starting dzen2
 
