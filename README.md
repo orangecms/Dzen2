@@ -1,8 +1,7 @@
-# Dzen2 config files
-## FOR ARCH USERS
----
-### PREREQUISITES
+# Dzen2 config files ( FOR ARCH USERS)
 
+### PREREQUISITES
+---
 ### CPU Temperature
 
 -> sudo pacman -S i2c-tools
