@@ -78,6 +78,4 @@ Icon-fonts: (located in Dropbox "conky-fonts" folder)
 
 Settings Manager **>>** Session and Startup **>>** Application Autostart **>>** Add
 
-Name: Dzen2
-Description: Dzen2 panel
 Command: `/bin/dzen_start`
