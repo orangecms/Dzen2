@@ -19,7 +19,7 @@
     $ sudo pacman -S acpi
     $ acpi -V
 
-#### 3. Downloading with wget command
+#### 3. Wget tool
 
     $ sudo pacman -S wget
 
