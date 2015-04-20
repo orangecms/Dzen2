@@ -1,5 +1,9 @@
 # Dzen2 config files ( FOR ARCH USERS)
 
+[PREREQUISITES]()
+
+[INSTALLATION]()
+
 ### PREREQUISITES
 ---
 ### CPU Temperature
