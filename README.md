@@ -1,6 +1,7 @@
-# Dzen2 XFCE Arch config files
-
-==========   PREREQUISITES (FOR ARCH USERS)
+# Dzen2 config files
+## FOR ARCH USERS
+---
+### PREREQUISITES
 
 ### CPU Temperature
 
