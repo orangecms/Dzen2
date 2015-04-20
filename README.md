@@ -76,5 +76,8 @@ Icon-fonts: (located in Dropbox "conky-fonts" folder)
 
 **Automatically on boot (FOR XFCE USERS)**
 
-Settings Manager **>>** Session and Startup **>>** Application Autostart
-Add command: `/bin/dzen_start`
+Settings Manager **>>** Session and Startup **>>** Application Autostart **>>** Add
+
+Name: Dzen2
+Description: Dzen2 panel
+Command: `/bin/dzen_start`
