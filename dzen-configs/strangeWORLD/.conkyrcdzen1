@@ -10,12 +10,12 @@ TEXT
 #-------------------------------------------------
 #
 # Upload and parse gmail info
-${execi 60 curl -u ksiencha:L2xfU3t8oMsCcA --silent "https://mail.google.com/mail/feed/atom" -o ~/.cache/gmail.xml && xmllint --format ~/.cache/gmail.xml > ~/.cache/gmailParsed.xml}
+${execi 60 curl -u username:password --silent "https://mail.google.com/mail/feed/atom" -o ~/.cache/gmail.xml && xmllint --format ~/.cache/gmail.xml > ~/.cache/gmailParsed.xml}
 #
 #--------------------------------------------------
 #
 # Upload and parse weather info
-${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/274bb8f92b8e52547b1673bd88bda42f/50.4793,24.2816?units=si&exclude=hourly,flags" > ~/.cache/Forecast.json}\
+${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/50.4793,24.2816?units=si&exclude=hourly,flags" > ~/.cache/Forecast.json}\
 #
 #--------------------------------------------------
 #
