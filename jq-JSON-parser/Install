@@ -13,7 +13,7 @@ Or use jq in this directory
 -> sudo cp jq /usr/bin 
 
 
-======= USAGE
+======= USAGE (http://xmodulo.com/how-to-parse-json-string-via-command-line-on-linux.html)
 Example: 
 -> cat json.txt
 ------------------------------------
