@@ -1,8 +1,10 @@
 ## Dzen2 config files ( FOR ARCH USERS)
 
-[PREREQUISITES](https://github.com/Ksiencha/Dzen2/blob/master/README.md#prerequisites)
+**strangeWORLD**
+![screenshot](https://github.com/Ksiencha/Dzen2/blob/master/Screenshot.png)
 
-[INSTALLATION](https://github.com/Ksiencha/Dzen2/blob/master/README.md#installation)
+* [PREREQUISITES](https://github.com/Ksiencha/Dzen2/blob/master/README.md#prerequisites)
+* [INSTALLATION](https://github.com/Ksiencha/Dzen2/blob/master/README.md#installation)
 
 ### PREREQUISITES
 ---
