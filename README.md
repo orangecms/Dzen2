@@ -72,7 +72,7 @@ If you want to download the latest version of **Ionicons** font from the officia
 
     $ sudo pacman -S dzen2
 
-#### 2. Place your Dzen2 folder into your `/home/username` directory
+#### 2. Place your Dzen2 folder into your `/home/username/` directory
 #### 3. Make all `.sh` files executable
 
     $ cd ~/Dzen2/dzen-configs/strangeWORLD
