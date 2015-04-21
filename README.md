@@ -42,8 +42,16 @@
 #### 7. Install dropbox-cli
 
     $  yaourt -S dropbox-cli
+    
+#### 8. Weather Forecast
 
-#### 8. Fonts
+In order to obtain an API key you have to create your own account on https://developer.forecast.io/ (it's free, and the first 1000 calls per day are free, which is plenty as for me)
+Read through their [documentation](https://developer.forecast.io/docs/v2) in order to get the url with json queries that you want. For exapmle, my url contains queries which enable Celsius degrees `units=si` and exclude "hourly" and "flags" data blocks `exclude=hourly,flags`:
+
+        https://api.forecast.io/forecast/API_KEY/LATITUDE,LONGITUDE?units=si&exclude=hourly,flags
+
+
+#### 9. Fonts
 
 You can find them in **Fonts** directory:
 
@@ -86,12 +94,9 @@ Change `username:password` respectively.
 
 1. Find the line `Upload and parse weather info`
 
-        ${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/LATITUDE,LONGITUDE?units=si&exclude=hourly,flags" > ~/.cache/Forecast.json}
+        ${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/LATITUDE,LONGITUDE" > ~/.cache/Forecast.json}
 
-You need to replcase `API_KEY` and `LATITUDE,LONGITUDE` fields:
-
-* Go to https://developer.forecast.io/ and create your account. (**Note**: First 1000 calls per day are free)
-* Log in and copy your API key.
+You need to replcase `API_KEY` and `LATITUDE,LONGITUDE` fields.
 
 #### 4. Starting dzen2
 
