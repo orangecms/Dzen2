@@ -31,9 +31,9 @@
 
     $ sudo pacman -S bc
 
-#### 6. Install JSON-parsers 
+#### 6. Install JSON parsers 
 
-6.1. Install jq parser - http://stedolan.github.io/jq/ (read the Install file in folder jq-JSON-parser)
+6.1. Install jq parser - http://stedolan.github.io/jq/ (read the Install file in folder **jq-JSON-parser**)
 
 6.2. Insall jshon parser
 
