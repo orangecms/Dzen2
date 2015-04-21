@@ -43,7 +43,7 @@ ${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/LATIT
 #
 # Keyboard Layout
 #
-^fn(Ubuntu:bold:size=10)^fg(\#333333)^bg(\#666666) ${exec xkblayout-state print "%s"}^bg()^fg(\#666666)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca() \
+^ca(1, xkblayout-state set +1)^fn(Ubuntu:bold:size=10)^fg(\#333333)^bg(\#666666) ${exec xkblayout-state print "%s"}^bg()^fg(\#666666)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca() \
 #
 # Weather Forecast
 #
