@@ -9,7 +9,7 @@ fnT="Inconsolata:bold:size=11"
 wifiState=$(cat /sys/class/net/wlp3s0/operstate)
 ethernetState=$(cat /sys/class/net/enp2s0f0/operstate)
 
-connectionState=$(ping -c 3 www.google.com | grep loss | awk '{print $6,$7,$8}' | tr -d ',')
+connectionState=$(ping -q -c 3 www.google.com | grep loss | awk '{print $6,$7,$8}' | tr -d ',')
 
 percentage=$(echo $connectionState | awk '{print $1}' | tr -d '%')
 
