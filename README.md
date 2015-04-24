@@ -1,7 +1,8 @@
 ## Dzen2 config files (ARCH/XFCE)
 
-Disclaimer: | Use Dzen2 files at your own risk!
+Disclaimer: | Use my files at your own risk!
 --- | ---
+
 
 
 **strangeWORLD**
