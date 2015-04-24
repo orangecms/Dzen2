@@ -1,5 +1,9 @@
 ## Dzen2 config files (ARCH/XFCE)
 
+Disclaimer: | Use Dzen2 files at your own risk!
+--- | ---
+
+
 **strangeWORLD**
 ![screenshot](https://github.com/Ksiencha/Dzen2/blob/master/Screenshot.png)
 
