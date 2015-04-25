@@ -15,7 +15,7 @@ TEXT
 #
 # PulseAudio Volume control
 #
-^ca(1, pavucontrol)  ^fg(\#e2abd4)^fn(Ionicons:size=18)^fn()^fg()  ^ca()\
+^ca(1, pavucontrol)  ^fg(\#e2abd4)^fn(FontAwesome:size=18)^fn()^fg()  ^ca()\
 #
 # Internet Connection
 #
