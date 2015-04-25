@@ -38,7 +38,7 @@ ${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/LATIT
 #
 # Time & Date
 #
-^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/time-date.sh)^fn()^fg(\#e2abd4)^fn(FontAwesome:size=13)^fn()  ${time %a %d %b %I:%M %P}^bg(\#666666)^fg(\#333333)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca()\
+^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/time-date.sh)^fn()^fg(\#e2abd4)^fn(FontAwesome:size=13)^fn()  ${time %a, %b %d} ^fg(\#666666) | ^fg(\#e2abd4)${time %I:%M %P}^bg(\#666666)^fg(\#333333)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca()\
 \
 #
 # Keyboard Layout
