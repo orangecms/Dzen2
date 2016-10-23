@@ -22,7 +22,7 @@ icons4="Typicons:size=13"
 # ---------- Today info
 #
 today_sum=$(cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[0].summary' | tr -d '"')
-today_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[0].icon' | grep -o '[^\"]*'` ~/Dzen2/dzen-configs/strangeWORLD/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
+today_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[0].icon' | grep -o '[^\"]*'` $_SCRIPT_DIR/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
 
 # Temperature levels
 today_temp_max=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[0].temperatureMax'`)
@@ -46,7 +46,7 @@ lunationNumber=$(cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[0].moon
 # ---------- Currently
 #
 current_sum=$(cat ~/.cache/Forecast.json | jshon -e currently | jq '.summary' | tr -d '"')
-current_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e currently | jq '.icon' | grep -o '[^\"]*'` ~/Dzen2/dzen-configs/strangeWORLD/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
+current_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e currently | jq '.icon' | grep -o '[^\"]*'` $_SCRIPT_DIR/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
 current_temp=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e currently | jq '.temperature'`)
 
 
@@ -125,7 +125,7 @@ else
 fi
 
 
-wind_icon=$(grep `echo $wind_dir | grep -o '[^\"]*'` ~/Dzen2/dzen-configs/strangeWORLD/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
+wind_icon=$(grep `echo $wind_dir | grep -o '[^\"]*'` $_SCRIPT_DIR/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
 
 #
 # ---------- Next 7 day forecast
@@ -137,7 +137,7 @@ next7DAYsum=$(cat ~/.cache/Forecast.json | jshon -e daily | jq '.summary')
 #
 next_name=$(date --date='+1 day' +'%a' | tr '[:lower:]' '[:upper:]')
 next_sum=$(cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[1].summary' | tr -d '"')
-next_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[1].icon' | grep -o '[^\"]*'` ~/Dzen2/dzen-configs/strangeWORLD/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
+next_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[1].icon' | grep -o '[^\"]*'` $_SCRIPT_DIR/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
 next_temp_max=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[1].temperatureMax'`)
 next_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[1].temperatureMin'`)
 
@@ -189,7 +189,7 @@ fi
 # 3rd day
 day3_name=$(date --date='+2 day' +'%a' | tr '[:lower:]' '[:upper:]')
 day3_sum=$(cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[2].summary' | tr -d '"')
-day3_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[2].icon' | grep -o '[^\"]*'` ~/Dzen2/dzen-configs/strangeWORLD/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
+day3_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[2].icon' | grep -o '[^\"]*'` $_SCRIPT_DIR/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
 day3_temp_max=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[2].temperatureMax'`)
 day3_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[2].temperatureMin'`)
 
@@ -197,7 +197,7 @@ day3_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | 
 # 4th day
 day4_name=$(date --date='+3 day' +'%a' | tr '[:lower:]' '[:upper:]')
 day4_sum=$(cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[3].summary' | tr -d '"')
-day4_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[3].icon' | grep -o '[^\"]*'` ~/Dzen2/dzen-configs/strangeWORLD/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
+day4_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[3].icon' | grep -o '[^\"]*'` $_SCRIPT_DIR/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
 day4_temp_max=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[3].temperatureMax'`)
 day4_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[3].temperatureMin'`)
 
@@ -205,7 +205,7 @@ day4_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | 
 # 5th day
 day5_name=$(date --date='+4 day' +'%a' | tr '[:lower:]' '[:upper:]')
 day5_sum=$(cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[4].summary' | tr -d '"')
-day5_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[4].icon' | grep -o '[^\"]*'` ~/Dzen2/dzen-configs/strangeWORLD/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
+day5_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[4].icon' | grep -o '[^\"]*'` $_SCRIPT_DIR/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
 day5_temp_max=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[4].temperatureMax'`)
 day5_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[4].temperatureMin'`)
 
@@ -213,7 +213,7 @@ day5_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | 
 # 6th day
 day6_name=$(date --date='+5 day' +'%a' | tr '[:lower:]' '[:upper:]')
 day6_sum=$(cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[5].summary' | tr -d '"')
-day6_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[5].icon' | grep -o '[^\"]*'` ~/Dzen2/dzen-configs/strangeWORLD/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
+day6_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[5].icon' | grep -o '[^\"]*'` $_SCRIPT_DIR/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
 day6_temp_max=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[5].temperatureMax'`)
 day6_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[5].temperatureMin'`)
 
@@ -221,7 +221,7 @@ day6_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | 
 # 7th day
 day7_name=$(date --date='+6 day' +'%a' | tr '[:lower:]' '[:upper:]')
 day7_sum=$(cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[6].summary' | tr -d '"')
-day7_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[6].icon' | grep -o '[^\"]*'` ~/Dzen2/dzen-configs/strangeWORLD/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
+day7_icon=$(grep `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[6].icon' | grep -o '[^\"]*'` $_SCRIPT_DIR/weatherIconList | awk 'NR==1' | grep -o "\"[^\"]*\"" | grep -o "[^\"]*")
 day7_temp_max=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[6].temperatureMax'`)
 day7_temp_min=$(printf "%0.0f\n" `cat ~/.cache/Forecast.json | jshon -e daily | jq '.data[6].temperatureMin'`)
 

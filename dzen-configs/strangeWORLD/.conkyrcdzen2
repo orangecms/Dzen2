@@ -10,7 +10,7 @@ TEXT
 #
 # Volume control (left click mutes the volume)
 #
-^ca(1, amixer set Master toggle)^bg(\#666666)   ${exec ~/Dzen2/dzen-configs/strangeWORLD/volume.sh}  ${exec amixer get Master | grep "Front Left:" | awk '{print $5}' | tr -d '[]'}   ^fg()^bg()^ca()\
+^ca(1, amixer set Master toggle)^bg(\#666666)   ${exec $_SCRIPT_DIR/volume.sh}  ${exec amixer get Master | grep "Front Left:" | awk '{print $5}' | tr -d '[]'}   ^fg()^bg()^ca()\
 \
 #
 # PulseAudio Volume control and restarting dzen2
@@ -19,15 +19,15 @@ TEXT
 #
 # Internet Connection
 #
-^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/internet-state.sh)^bg(\#666666)${if_existing /sys/class/net/enp2s0f0/operstate up}  ^fn(Ionicons:size=18)^fn()  ${else}${if_existing /sys/class/net/wlp3s0/operstate up}  ^fn(Ionicons:size=18)^fn()  ${else}  ^fg(\#222222)^fn(Ionicons:size=16)^fn()^fg()  ${endif}${endif}^bg()^ca()\
+^ca(1, $_SCRIPT_DIR/internet-state.sh)^bg(\#666666)${if_existing /sys/class/net/enp2s0f0/operstate up}  ^fn(Ionicons:size=18)^fn()  ${else}${if_existing /sys/class/net/wlp3s0/operstate up}  ^fn(Ionicons:size=18)^fn()  ${else}  ^fg(\#222222)^fn(Ionicons:size=16)^fn()^fg()  ${endif}${endif}^bg()^ca()\
 #
 # Dropbox
 #
-^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/dropbox-state.sh)${exec ~/Dzen2/dzen-configs/strangeWORLD/dropbox-icon.sh}^ca()\
+^ca(1, $_SCRIPT_DIR/dropbox-state.sh)${exec $_SCRIPT_DIR/dropbox-icon.sh}^ca()\
 #
 # Battery state
 #
-^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/battery-state.sh)^bg()  ${exec ~/Dzen2/dzen-configs/strangeWORLD/battery-icon.sh}  ${exec acpi | awk '{print $4}' | tr -d ','}  ^bg()^ca()\
+^ca(1, $_SCRIPT_DIR/battery-state.sh)^bg()  ${exec $_SCRIPT_DIR/battery-icon.sh}  ${exec acpi | awk '{print $4}' | tr -d ','}  ^bg()^ca()\
 #
 # XFCE logout dialog
 #

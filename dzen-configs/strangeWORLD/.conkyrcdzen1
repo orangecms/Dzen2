@@ -25,20 +25,20 @@ ${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/LATIT
 #
 # Pacman updates
 #
-^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/check-updates.sh)^bg(\#666666)${if_match ${execpi 300 checkupdates | wc -l} != 0}^fg(\#beffbe)   ^fn(Ionicons:size=13)P^fn()  ${execpi 300 checkupdates | wc -l} update(s)^fg()^bg()${else}^fg(\#333333)   ^fn(Ionicons:size=13)P^fn() ${execpi 300 checkupdates | wc -l} update(s)^fg()^bg()${endif}^fg(\#666666)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca()   \
+^ca(1, $_SCRIPT_DIR/check-updates.sh)^bg(\#666666)${if_match ${execpi 300 checkupdates | wc -l} != 0}^fg(\#beffbe)   ^fn(Ionicons:size=13)P^fn()  ${execpi 300 checkupdates | wc -l} update(s)^fg()^bg()${else}^fg(\#333333)   ^fn(Ionicons:size=13)P^fn() ${execpi 300 checkupdates | wc -l} update(s)^fg()^bg()${endif}^fg(\#666666)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca()   \
 #
 # Gmail Inbox
 #
-^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/gmail-inbox.sh)${execi 60 ~/Dzen2/dzen-configs/strangeWORLD/gmail-icon.sh} ^bg(\#666666)^fg(\#333333)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca() \
+^ca(1, $_SCRIPT_DIR/gmail-inbox.sh)${execi 60 $_SCRIPT_DIR/gmail-icon.sh} ^bg(\#666666)^fg(\#333333)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca() \
 #
 # System Info
 #
-^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/sysinfo.sh)^fg(\#87d7ff)^fn(FontAwesome:size=13)^fn()  $kernel^bg(\#333333)^fg(\#666666)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca()^bg()   \
+^ca(1, $_SCRIPT_DIR/sysinfo.sh)^fg(\#87d7ff)^fn(FontAwesome:size=13)^fn()  $kernel^bg(\#333333)^fg(\#666666)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca()^bg()   \
 \
 #
 # Time & Date
 #
-^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/time-date.sh)^fn()^fg(\#e2abd4)^fn(FontAwesome:size=13)^fn()  ${time %a, %b %d} ^fg(\#666666) | ^fg(\#e2abd4)${time %I:%M %P}^bg(\#666666)^fg(\#333333)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca()\
+^ca(1, $_SCRIPT_DIR/time-date.sh)^fn()^fg(\#e2abd4)^fn(FontAwesome:size=13)^fn()  ${time %a, %b %d} ^fg(\#666666) | ^fg(\#e2abd4)${time %I:%M %P}^bg(\#666666)^fg(\#333333)^i(/home/ksiencha/Dzen2/Icons/mt1.xbm)^fg()^ca()\
 \
 #
 # Keyboard Layout
@@ -47,4 +47,4 @@ ${execi 900 curl -X GET --silent "https://api.forecast.io/forecast/API_KEY/LATIT
 #
 # Weather Forecast
 #
-^ca(1, ~/Dzen2/dzen-configs/strangeWORLD/weather-info.sh)^fn(Weather Icons:size=13)${execi 300 ~/Dzen2/dzen-configs/strangeWORLD/weather-icon.sh}^ca()
+^ca(1, $_SCRIPT_DIR/weather-info.sh)^fn(Weather Icons:size=13)${execi 300 $_SCRIPT_DIR/weather-icon.sh}^ca()
