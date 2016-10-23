@@ -1,7 +1,7 @@
 #!/bin/sh
 
 pushd `dirname $0` > /dev/null
-export _SCRIPT_DIR=`pwd -P`
+export _SCRIPT_DIR=`pwd -P`/../share/dzen-configs/strangeWORLD
 popd > /dev/null
  
  FG='#dcdcdc'
